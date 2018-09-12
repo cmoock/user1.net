@@ -39,6 +39,15 @@ a:hover {
   width: 90px;
 }
 
+#contact {
+  position: fixed;
+  right: 10px;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
 #hero > h1 {
   font-weight: 100;
   font-size: 6vw;
