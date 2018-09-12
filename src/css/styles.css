@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  margin-bottom: 6vw;
 }
 
 body.loaded {
@@ -47,7 +48,7 @@ a:hover {
 #hero {
   padding-top: 100px;
   text-align: center;
-  margin: 0 10%;
+  margin: 0 10vw;
 }
 
 #subHeader {
@@ -62,19 +63,19 @@ a:hover {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 0 10% 0 10%;
+	margin: 0 10vw 0 10vw;
   padding-top: 5vw
 }
 
-.cards > .card {
+.cards .card {
 	flex: 1;
-	margin: 2%;
+	margin: 2vw;
   text-align: center;
 }
 
 .card {
 	padding: 10px;
-  margin: 3% 12% 0 12%;
+  margin: 3vw 12vw 0 12vw;
   background-color: #665B67;
   box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -96,7 +97,7 @@ a:hover {
 }
 
 .card .description {
-  margin: 5px 5% 0 5%;
+  margin: 5px 5vw 0 5vw;
 }
 
 .roundedCorners {
@@ -106,6 +107,21 @@ a:hover {
 .keyProjectSectionImage {
   border-radius: 4px;
   width: 30%;
+}
+
+.footerCards {
+  background-color: #BDBBB6;
+  margin: 3vw 0 0 0;
+  padding-top: 0;
+}
+
+.footerCards .card {
+  background-color: #E0DEDA;
+  text-align: left;
+}
+
+.footerCards, .footerCards .cardTitle, .footerCards a {
+  color: #514752;
 }
 
 .sticky {
@@ -134,8 +150,32 @@ a:hover {
   transition: opacity 250ms linear;
 }
 
+#copyrightNotice {
+  margin: 2vw 0 6vw 0;
+  text-align: center;
+}
+
+#footerEmail {
+  margin: 2vw;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
 @media screen and (max-width: 730px) {
 	.cards .card {
 		flex-basis: 100%;
 	}
+
+  .footerCards {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media screen and (min-width: 730px) {
+
+  .footerCards .description {
+    margin: 5px 1.5vw 0 1.5vw;
+  }
 }
