@@ -192,9 +192,15 @@ a:hover {
 }
 
 #footerEmail {
-  margin: 2vw;
+  margin-bottom: 2vw;
   text-align: center;
   font-weight: bolder;
+}
+
+#footerTitle {
+  margin-top: 1vw;
+  font-size: 3vw;
+  text-align: center;
 }
 
 
